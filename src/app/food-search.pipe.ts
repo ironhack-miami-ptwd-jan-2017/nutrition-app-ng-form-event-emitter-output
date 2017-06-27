@@ -19,8 +19,8 @@ export class FoodSearchPipe implements PipeTransform {
       // return items.filter(item => item[field].match(new RegExp(value, 'i')));
         // complicated version ^
 
-      return items.filter(item => item[field].toUpperCase().includes(value.toUpperCase()));
-        //simple version ^
+      return items.filter(item => item[field].toUpperCase().startsWith(value.toUpperCase()));
+        // simple version ^
 
   }
 
