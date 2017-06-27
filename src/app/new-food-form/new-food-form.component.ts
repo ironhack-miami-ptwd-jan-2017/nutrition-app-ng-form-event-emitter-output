@@ -1,4 +1,4 @@
-import {Component,OnInit,Input,Output,EventEmitter} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 
 @Component({
@@ -28,7 +28,8 @@ submitForm(myForm) {
 
   }
 
-  console.log(myForm);
+  // console.log(myForm);
+  // console.log(newFood);
 
   this.onAddFood.emit(newFood);
 
